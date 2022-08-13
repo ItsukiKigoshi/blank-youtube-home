@@ -1,0 +1,20 @@
+{
+    "manifest_version":3,
+    "name":"Blank YouTube Home",
+    "description": "Reset your DISGUSTING YouTube Home. With this extension, you will notice how terrible recommendation algorithme they're using in order to absorb our prescious time.",
+    "version":"1.0",
+    "icons": {
+      "128": "./icon128.png"
+    },
+    "content_scripts":[
+      {
+        "matches":[
+          "https://*.youtube.com/*"
+        ],
+        "js":[
+          "jquery-3.6.0.min.js",
+          "content.js"
+        ]
+      }
+    ]
+  }
